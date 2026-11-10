@@ -143,6 +143,10 @@
       .logo-slot { display: inline-flex; align-items: center; flex-shrink: 0; }
       .logo-slot .org-logo { height: 26px; width: auto; display: block; }
       .logo-slot:has(.org-logo) .badge { display: none; }
+      .logo-slot.logo-hero { display: flex; margin-bottom: 12px; }
+      .logo-hero .org-logo { height: 40px; }
+      .logo-hero-row { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+      .logo-hero-row .org-logo { height: 40px; }
       .entry h3 .org { font-weight: 600; color: var(--accent); }
       .entry .meta { font-size: 13px; color: var(--ink-faint); margin: 0 0 12px; }
       .entry p { margin: 0 0 10px; color: var(--ink-soft); font-size: 15px; }
@@ -380,13 +384,11 @@
         <div class="entry">
           <div class="dates" data-en="Oct. 2025 - Apr. 2026" data-fr="oct. 2025 - avr. 2026"></div>
           <div>
-            <h3>
-              <span class="logo-slot">
-                <span class="badge" style="color:#33606b;background:#33606b14;border-color:#33606b4d">CREST</span>
-                <img class="org-logo" src="CREST.logo" alt="CREST" onerror="this.remove()" />
-              </span>
-              <span class="h3-text"><span data-en="Research Assistant" data-fr="Assistant de recherche"></span> · <span class="org">CREST</span></span>
-            </h3>
+            <div class="logo-slot logo-hero">
+              <span class="badge" style="color:#33606b;background:#33606b14;border-color:#33606b4d">CREST</span>
+              <img class="org-logo" src="CREST.logo" alt="CREST" onerror="this.remove()" />
+            </div>
+            <h3><span class="h3-text"><span data-en="Research Assistant" data-fr="Assistant de recherche"></span> · <span class="org">CREST</span></span></h3>
             <p class="meta" data-en="Center for Research in Economics and Statistics · Paris" data-fr="Centre de recherche en économie et statistique · Paris"></p>
             <p>
               <span
@@ -485,7 +487,7 @@
         <div class="entry">
           <div class="dates" data-en="2025 - 2027" data-fr="2025 - 2027"></div>
           <div>
-            <h3>
+            <div class="logo-hero-row">
               <span class="logo-slot">
                 <span class="badge" style="color:#b0122f;background:#b0122f14;border-color:#b0122f4d">X</span>
                 <img class="org-logo" src="polytechnique.jpg" alt="École Polytechnique" onerror="this.remove()" />
@@ -494,8 +496,8 @@
                 <span class="badge" style="color:#1f4e8c;background:#1f4e8c14;border-color:#1f4e8c4d">ENSAE</span>
                 <img class="org-logo" src="ensae.png" alt="ENSAE Paris" onerror="this.remove()" />
               </span>
-              <span class="h3-text"><span data-en="Master's degree, Economics and Data Science" data-fr="Master Economics and Data Science"></span><br /><span class="org">École Polytechnique - ENSAE Paris</span></span>
-            </h3>
+            </div>
+            <h3><span class="h3-text"><span data-en="Master's degree, Economics and Data Science" data-fr="Master Economics and Data Science"></span><br /><span class="org">École Polytechnique - ENSAE Paris</span></span></h3>
             <p class="meta" data-en="Paris · GPA 3.94 / 4.00" data-fr="Paris · GPA 3,94 / 4,00"></p>
             <p>
               <span
@@ -509,13 +511,11 @@
         <div class="entry">
           <div class="dates" data-en="2022 - 2025" data-fr="2022 - 2025"></div>
           <div>
-            <h3>
-              <span class="logo-slot">
-                <span class="badge" style="color:#c8102e;background:#c8102e14;border-color:#c8102e4d">MCGILL</span>
-                <img class="org-logo" src="mcgill.png" alt="McGill University" onerror="this.remove()" />
-              </span>
-              <span class="h3-text"><span data-en="Bachelor's degree, Economics, Mathematics focus" data-fr="Licence en économie, spécialisation mathématiques"></span><br /><span class="org">McGill University</span></span>
-            </h3>
+            <div class="logo-slot logo-hero">
+              <span class="badge" style="color:#c8102e;background:#c8102e14;border-color:#c8102e4d">MCGILL</span>
+              <img class="org-logo" src="mcgill.png" alt="McGill University" onerror="this.remove()" />
+            </div>
+            <h3><span class="h3-text"><span data-en="Bachelor's degree, Economics, Mathematics focus" data-fr="Licence en économie, spécialisation mathématiques"></span><br /><span class="org">McGill University</span></span></h3>
             <p class="meta" data-en="Montreal, Canada · GPA 3.61 / 4.00" data-fr="Montréal, Canada · GPA 3,61 / 4,00"></p>
             <p>
               <span
@@ -562,7 +562,7 @@
           </li>
           <li>
             <span class="when">English</span>
-            <span class="what" data-en="Fluent (C1)" data-fr="Courant (C1)"></span>
+            <span class="what" data-en="Fluent" data-fr="Courant"></span>
           </li>
           <li>
             <span class="when">Español</span>
@@ -692,6 +692,6 @@
         targets.forEach(function (s) { if (s) observer.observe(s); });
       })();
     </script>
-  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" nonce="a0oK3OYG6NMfx0bD3dkpTg==" data-cf-beacon='{"version":"2024.11.0","token":"36b4216ae2dc4d5488c249161e71fe1e","spa":2}' crossorigin="anonymous"></script>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" nonce="2pupn6b4PrVc8WyESP+pog==" data-cf-beacon='{"version":"2024.11.0","token":"36b4216ae2dc4d5488c249161e71fe1e","spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
